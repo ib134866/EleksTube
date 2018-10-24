@@ -222,7 +222,8 @@ void configModeCallback (WiFiManager *myWiFiManager) {
   Serial.println(APIP[x]);
   int result;
   // Display the octects of the AP IP address on the left most 3 digits of the EleksTube display
-  EleksTube.print(EleksTube_realtime + (APIP[x] / 100) + 'FFFFFF' + ((APIP[x] / 10) % 10) + 'FFFFFF' + (APIP[x] % 10) + 'FFFFFF000000000000000000000');
+  String clock_out = (String(EleksTube_realtime) + String((APIP[x] / 100)) + "FFFFFF" + String(((APIP[x] / 10) % 10)) + "FFFFFF" + String((APIP[x] % 10)) + "FFFFFF000000000000000000000");
+  EleksTube.print(clock_out);
   delay(4000);                      // delay for four seconds so the user can note the IP address
   x++;
   }
