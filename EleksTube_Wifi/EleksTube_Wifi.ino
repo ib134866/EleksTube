@@ -48,11 +48,19 @@ int m_10;       // 10s of minutes
 int m_1;        // 1s of minutes
 int s_10;       // 10s of seconds
 int s_1;        // 1s of seconds
+int mnth_1;     // 1s of months
+int mnth_10;    // 10s of monthd
+int day_1;      // 1s of day
+int day_10;     // 10s of day
+int year_1;     // 1s of year
+int year_10;    // 10s of year
 
 const char LED_Colour[] = "402000";     // Colour of LEDs - 042000 represents an orange colour similar to a Neon Nixie Tube
-const char EleksTube_realtime[2] = "/";       // ElecksTube API - realtime header value
-const char EleksTube_update[2] = "*";         // ElecksTube API - update time header value
-const char EleksTube_reset[6] = "$00";        // ElecksTube API - mode change 
+const char LED_black[] = "000000";      // All black
+const char EleksTube_realtime[2] = "/";       // EleksTube API - realtime header value
+const char EleksTube_update[2] = "*";         // EleksTube API - update time header value
+const char EleksTube_reset[6] = "$00";        // EleksTube API - mode change 
+const char EleksTube_alldigit[2] = "#";        // EleksTube API - flash through all digits
 
 WiFiUDP ntpUDP;                                 //initialise UDP NTP
 NTPClient ntpClient(ntpUDP, "time.google.com"); // initialist NTP client with server name 
@@ -133,12 +141,12 @@ void setup()
   if(timeStatus()==timeNotSet) // test for time_t set
      Serial.println("Unable to sync with NTP");
   else
-     Serial.print("NTP has set the system time to: "); Serial.print(hour()); Serial.print(":"); Serial.print(minute()); Serial.print(":"); Serial.print(second()); Serial.print(" DST:"); Serial.print(DST); Serial.print(" Epoch:"); Serial.println(now());;
+     Serial.print("NTP has set the system time to: "); Serial.print(hour()); Serial.print(":"); Serial.print(minute()); Serial.print(":"); Serial.print(second()); Serial.print(" UTC Offset:"), Serial.print(offset), Serial.print(" DST:"); Serial.print(DST); Serial.print(" Epoch:"); Serial.println(now());;
      Serial.println("Updated EleksTube onboard RTC time to NTP time");
      splitTime();                           // split the hour, minutes and seconds into individual digits for EleksTube
      EleksTube.print(EleksTube_reset);    // Reset display
      delay(1000);
-     EleksSerialOut(EleksTube_update);     // Update RTC clock on EleksTude clock
+     EleksSerialOut(EleksTube_update, h_10, LED_Colour, h_1, LED_Colour, m_10, LED_Colour, m_1, LED_Colour, s_10, LED_Colour, s_1, LED_Colour);     // Update RTC clock on EleksTude clock
      delay(2000);                         // wait for EleksTube to update RTC
 }
 
@@ -154,13 +162,30 @@ void loop()
     getNTPTime();                 // update NTP time
     splitTime();                  // split the hour, minutes and seconds into individual digits for EleksTube
     EleksTube.print(EleksTube_reset);    // Reset display
-    EleksSerialOut(EleksTube_update);     // Update RTC clock on EleksTude clock
+    EleksSerialOut(EleksTube_update, h_10, LED_Colour, h_1, LED_Colour, m_10, LED_Colour, m_1, LED_Colour, s_10, LED_Colour, s_1, LED_Colour);     // Update RTC clock on EleksTude clock
     delay(2000);                          // wait for EleksTube to update RTC
   }
   Cur_time = now();   // set current time
   while( Cur_time == now()){ }    // only update clock on second change - wait here until seconds change
-  splitTime();                      // split the time into separate digits to display
-  EleksSerialOut(EleksTube_realtime);  // output time to EleksTube via EleksTube serial output
+  if (second() >= 50 && second() <= 55)
+  {
+    splitDate();
+    if(second() == 50)
+    {
+      //EleksSerialOut(EleksTube_realtime, 0, LED_black, 0, LED_black, 0, LED_black, 0, LED_black, 0, LED_black, 0, LED_black);
+      EleksTube.print(EleksTube_alldigit); // Flash all digits
+      EleksTube.print(EleksTube_reset);
+      //delay(200);
+    } else
+    {
+      EleksSerialOut(EleksTube_realtime, mnth_10, LED_Colour, mnth_1, LED_Colour, day_10, LED_Colour, day_1, LED_Colour, year_10, LED_Colour, year_1, LED_Colour);
+    }
+  } else
+  {
+    splitTime();                      // split the time into separate digits to display
+    // output time to EleksTube via EleksTube serial output
+    EleksSerialOut(EleksTube_realtime, h_10, LED_Colour, h_1, LED_Colour, m_10, LED_Colour, m_1, LED_Colour, s_10, LED_Colour, s_1, LED_Colour);     // Update RTC clock on EleksTude clock
+  }
   // Print time on USB serial for reference
   String serial_out = (String(h_10) + String(h_1) + ":" + String(m_10) + String(m_1) + ":" + String(s_10) + String(s_1) + " DST:" + String(DST) + " Epoch:" + String(now()));
   Serial.println(serial_out);
@@ -258,10 +283,37 @@ void splitTime(){
     s_10 = second() / 10;  // divide by 10 to get the most significant digit
   }
 }
-void EleksSerialOut(const char header[2])
+void splitDate(){
+// Correct time -  split time into individual digits and add leading zeros to hours, minutes and seconds as required
+  if(month() <= 9)   // hour is lss then 9 add zero
+  {
+    mnth_10 = 0;       // set leading digit to zero
+    mnth_1 = month();   // set least significant digit to variable
+  } else {
+    mnth_1 = month() % 10;    // get modulus and set least significant digit to result
+    mnth_10 = month() / 10;  // divide by 10 to get the most significant digit
+  }
+  if(day() <= 9)   // minute is less than 9 add leading zero
+  {
+    day_10 = 0;       // set leading digit to zero
+    day_1 = day(); // set least significant digit to variable
+  } else {
+    day_1 = day() % 10;    // get modulus and set least significant digit to result
+    day_10 = day() / 10;  // divide by 10 to get the most significant digit
+  }
+  if((year() % 100) <= 9)   // second is less than 9, add leading zero
+  {
+    year_10 = 0;             // set leading digit to zero
+    year_1 = year() % 100 ;       // set least significant digit to variable
+  } else {
+    year_1 = (year() % 100) % 10;    // get modulus and set least significant digit to result
+    year_10 = (year() % 100) / 10;  // divide by 10 to get the most significant digit
+  }
+}
+void EleksSerialOut(const char header[2], int d_1, const char d_1_color[], int d_2, const char d_2_color[], int d_3, const char d_3_color[], int d_4, const char d_4_color[], int d_5, const char d_5_color[], int d_6, const char d_6_color[])
 {
   // Output time to EleksTube according to ElekMaker published API
   // /(header)1(first tube number)66CCFF(Standard Sixteen Binary RGB color)166CCFF(second tube number and color).....
-  String clock_out = (String(header) + String(h_10) + String(LED_Colour) + String(h_1) + String(LED_Colour) + String(m_10) + String(LED_Colour) + String(m_1) + String(LED_Colour) + String(s_10) + String(LED_Colour) + String(s_1) + String(LED_Colour));
+  String clock_out = (String(header) + String(d_1) + String(d_1_color) + String(d_2) + String(d_2_color) + String(d_3) + String(d_3_color) + String(d_4) + String(d_4_color) + String(d_5) + String(d_5_color) + String(d_6) + String(d_6_color));
   EleksTube.print(clock_out);
   }
