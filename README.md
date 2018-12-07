@@ -25,4 +25,4 @@ To start using it:
 2. Touch the QR-code icon and point the camera to the code below
 3. Enjoy my app!
 
-https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App.png
+![alt text](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App.png)
