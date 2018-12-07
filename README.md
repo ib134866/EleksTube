@@ -18,6 +18,12 @@ The program has the following features:
 7. Utilizes OTA (Over The Air) update capabilities of the ESP 8266 module to allow sketch updates after the module is installed in the belly of the clock.
 8. Uses Blynk https://www.blynk.cc mobile application software to control the clock.  Blynk application allows for selection of clock source (NTP or internal RTC), update internal RTC with NTP data, display current date information once a minute for five seconds at a configurable start second.  Change from 24hr to 12 hr time display.  Configure a time range when the clock display should be off - ie. when sleeping if clock is in a bedroom. Each digit can have an individual colour set and stored and restored during a reboot.  The date display can have a different colour than the time display.
 
+The first time the program is installed on a new ESP8266 board, you must initialize the SPIF files system.  Uncomment the following define statement:
+
+//#define FORMAT_SPIFFS                   // format SPIF FS to store peristent variables - use to initialise FS
+
+Once you have completed the Wifi setup and entered your timezonedb and blynk tokens, then comment the define statement.  If you do not, it will initialze the filesystem everytime you reboot the device and you will need to re-enter your tokens again.
+
 I've made EleksTube app. You are welcome to try it out!
 
 To start using it:
