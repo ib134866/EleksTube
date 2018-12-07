@@ -18,3 +18,9 @@ The program has the following features:
 7. Utilizes OTA (Over The Air) update capabilities of the ESP 8266 module to allow sketch updates after the module is installed in the belly of the clock.
 8. Uses Blynk https://www.blynk.cc mobile application software to control the clock.  Blynk application allows for selection of clock source (NTP or internal RTC), update internal RTC with NTP data, display current date information once a minute for five seconds at a configurable start second.  Change from 24hr to 12 hr time display.  Configure a time range when the clock display should be off - ie. when sleeping if clock is in a bedroom. Each digit can have an individual colour set and stored and restored during a reboot.  The date display can have a different colour than the time display.
 
+I've made EleksTube app. You are welcome to try it out!
+
+To start using it:
+1. Download Blynk App: http://j.mp/blynk_Android or http://j.mp/blynk_iOS
+2. Touch the QR-code icon and point the camera to the code below
+3. Enjoy my app!
