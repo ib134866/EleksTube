@@ -24,3 +24,5 @@ To start using it:
 1. Download Blynk App: http://j.mp/blynk_Android or http://j.mp/blynk_iOS
 2. Touch the QR-code icon and point the camera to the code below
 3. Enjoy my app!
+
+![alt text](https://raw.githubusercontent.com/ib134866/EleksTube/EleksTube_WiFi/EleksTube_Blynk_App.png)
