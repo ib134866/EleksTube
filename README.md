@@ -11,10 +11,10 @@ The program has the following features:
 
 1. Utilizes WiFiManager to setup a Access Point the first time the program in run.
 2. Displays the Access Point IP address on the clock display and waits for the user to connect to the AP and add a SSID to the configuration.
-3. Automatically determines your time zone based on your internet IP address.
-4. Uses the time zone information to determine your offset from UTC.
-5. Uses the time zone information to determine DST details - DST start, DST end and current DST status - either on or off.  Uitilzes this information to automatically switch DST offset from UTC when DST changes occur.
-6. Utilizes OTA (Over The Air) update capabilities of the ESP 8266 module to allow sketch updates after the module is installed in the belly of the clock.
-
-There is one of EleksTube functionality that is lost as a result of using this method of updating the clock.  Although the clock operation buttons do work, you are not able to change the display colour, as the program sets the colour each second update.
+3. Allows user to add timezonedb token, OTA password and Blynk token to wifi configuraton and subsequently saved in SPIF filesystem to be used in the program.
+4. Automatically determines your time zone based on your internet IP address.
+5. Uses the time zone information to determine your offset from UTC.
+6. Uses the time zone information to determine DST details - DST start, DST end and current DST status - either on or off.  Uitilzes this information to automatically switch DST offset from UTC when DST changes occur.
+7. Utilizes OTA (Over The Air) update capabilities of the ESP 8266 module to allow sketch updates after the module is installed in the belly of the clock.
+8. Uses Blynk https://www.blynk.com mobile application software to control the clock.  Blynk application allows for selection of clock source (NTP or internal RTC), update internal RTC with NTP data, display current date information once a minute for five seconds at a configurable start second.  Change from 24hr to 12 hr time display.  Configure a time range when the clock display should be off - ie. when sleeping if clock is in a bedroom. Each digit can have an individual colour set and stored and restored during a reboot.  The date display can have a different colour than the time display.
 
