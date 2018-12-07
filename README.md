@@ -26,3 +26,7 @@ To start using it:
 3. Enjoy my app!
 
 ![alt text](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App.png)
+
+Screenshots of the application and configuration.
+![alt image](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Screenshot.jpg)
+
