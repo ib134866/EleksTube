@@ -34,7 +34,7 @@ To start using it:
 ![alt text](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App.png)
 
 Screenshots of the application and configuration.
-![alt image](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Screenshot.jpg width="500" height="600")
+![alt image](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Screenshot.jpg width=500 height=600)
 ![alt image](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Configuration_Screenshot.jpg)
 ![alt image](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App_Screenshot.jpg)
 
