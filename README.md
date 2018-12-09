@@ -31,13 +31,12 @@ To start using it:
 2. Touch the QR-code icon and point the camera to the code below
 3. Enjoy my app!
 
-![alt text](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App.png)
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App.png" width="200 height="200">
 
 Screenshots of the application and configuration.
-<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Screenshot.jpg" width="500" height="600">
-![alt image](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Screenshot.jpg width=500 height=600)
-![alt image](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Configuration_Screenshot.jpg)
-![alt image](https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App_Screenshot.jpg)
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Screenshot.jpg" width="400" height="600">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Configuration_Screenshot.jpg" width=400 height="600">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App_Screenshot.jpg" width="400" height="600">
 
 
 
