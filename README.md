@@ -47,8 +47,14 @@ Once you have completed the Wifi setup and entered your timezonedb, blynk token,
 Screenshots of the application and configuration.
 <br>
 <img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Screenshot.jpg" width="400" height="600">
-<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Configuration_Screenshot.jpg" width=400 height="600">
 <img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Blynk_App_Screenshot.jpg" width="400" height="600">
 
+Images of connectivity to the EleksTube controller, ESP8266 or Wemos D1 Arduino boards and BN-220 GPS.
 
-
+<br>
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/Wemos_D1_mini_V3.jpg" width="400" height="600">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/ESP8266_12-F.jpg" width="400" height="600">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Controller.jpg" width="400" height="600">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Controller_ESP8266.jpg" width="400" height="600">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/BN-220_GPS.jpg" width="400" height="600">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/BN-220_GPS-ESP8266.jpg" width="400" height="600">
