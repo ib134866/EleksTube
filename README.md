@@ -53,8 +53,8 @@ Images of connectivity to the EleksTube controller, ESP8266 or Wemos D1 Arduino 
 
 <br>
 <img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/Wemos_D1_mini_V3.jpg" width="600" height="400">
-<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/ESP8266_12-F.jpg" width="400" height="600">
-<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Controller.jpg" width="400" height="600">
-<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Controller_ESP8266.jpg" width="400" height="600">
-<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/BN-220_GPS.jpg" width="400" height="600">
-<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/BN-220_GPS-ESP8266.jpg" width="400" height="600">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/ESP8266_12-F.jpg" width="600" height="400">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Controller.jpg" width="600" height="400">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Controller_ESP8266.jpg" width="600" height="400">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/BN-220_GPS.jpg" width="600" height="400">
+<img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/BN-220_GPS-ESP8266.jpg" width="600" height="400">
