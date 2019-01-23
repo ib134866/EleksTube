@@ -34,10 +34,9 @@ BN-220 GPS module - https://www.banggood.com/Dual-BN-220-GPS-GLONASS-Antenna-Mod
 
 Both Arduino controllers come with pin headers.<br>
 
+<b>To get started:</b>
 
-To get started:
-
-Install a local Blynk server:
+<b>Install a local Blynk server:</b>
 
 I would recommend that a local Blynk App be configured to support the EleksTube.  The following link describes the installation procedure:
 
@@ -45,7 +44,7 @@ https://github.com/blynkkk/blynk-server#getting-started
 
 The Blynk server can be installed easily on a Raspberry PI, Windows PC, Docker or Linux PC. Once the Blynk server is installed, you will need to login and create a new user with sufficient credit to support the EleksTube Blynk App - approximately $3200 in credit.  Details on logging and and setting up a user are detailed in the installation instructions
 
-Install the Blynk Android/IOS App:
+<b>Install the Blynk Android/IOS App:</b>
 
 Install the Android or IOS app on your smart phone and scan the following image in the app to install the EleksTube Blynk App.
 
@@ -60,7 +59,7 @@ Copy the blynk auth token from the Blynk app located in the "Nut" menu of the El
 
 You will need Auth Token when configuring the Wifi setting of the EleksTube.  Press the "Email" key to email the auth token to yourself.
 
-Install compile and install the program:<br>
+<b>Install compile and install the program:</b><br>
 
 Download and install the Arduino IDE - https://www.arduino.cc/en/Main/Software<br>
 The software was created using IDE version 1.8.6.<br>
@@ -78,14 +77,14 @@ Configure the Wifi prior to connecting to the EleksTube clock if desired.  The E
 
 If you are connecting the ESP8266 12-F board to the EleksTube, be aware that there is an issue the power on reset if the power is connected to the Vin pin on the board.  I experienced CPU lock up if power was connected to the Vin on the board.  However if you connect the power to the USB port, there is no issue with power on reset.  As a result you will have to make a cable with a male micro usb connector to power the ESP8266 12-F baord from the EleksTube clock.  See the pictures below.
 
-ESP8266 12-F pinouts:<br>
+<b>ESP8266 12-F pinouts:</b><br>
 3v3 pin to the red wire on GPS module<br>
 GND pin to the black wire on GPS module<br>
 RX pin to the white wire on GPS module.  You must remove this wire if you are uploading new code via the EPS8266 USB interface as this port is shared with the USB port.<br>
 D4 ping to the RX pin on the EleksTube clock serial interface<br>
 Micro USB port - plus(+) and minus (-) from the EleskTube clock serial interface - Micro USB wiring - https://never-stop-building-blog-production.s3.amazonaws.com/pictures/wiring-micro-usb-pinout/micro-usb-power-connector-wiring.png<br>
 
-ESP8266 WEMOS D1 mini V3.0.0 pinouts:
+<b>ESP8266 WEMOS D1 mini V3.0.0 pinouts:</b>
 <br>
 +5V pin to EleksTube + pin on serial interface<br>
 GND pin (solder an extra pin to this connection) to negative (-) pin on EleksTube clock serial interface and black wire on the GPS module<br>
@@ -96,7 +95,6 @@ RX pin to the white wire on the GPS module. You must remove this wire if you are
 The first time the program is installed on a new ESP8266 board, the SPIF files system is initialized.  The SPIF filesystem is used to store configuration parameters during the WiFi setup.
 
 Once you have completed the Wifi setup and entered your timezonedb, blynk token, blynk host (local or remote) and blynk port (8080 for local), the clock will begin displaying the corrected time.
-
 
 
 Screenshots of the application and configuration.
