@@ -105,8 +105,7 @@ The sequence invloves:
  1. Press the "Update RTC" button
  2. Exactly 3 seconds later press the "Update RTC" button again
 <br>
-If you miss the 3 second window the sequnce resets and you must attempt again.  If successfull, the Wifi connectivity parameters are reset (not the other save parameters - OTA password, timezoneDB key, Blynk Auth token, Blynl host and Blynk port), the Arduino is reset and the EleksTube clock will display the Access Point IP address.<br>
-
+If you miss the 3 second window the sequnce resets and you must attempt again.  If successfull, the Wifi connectivity parameters are reset (not the other save parameters - OTA password, timezoneDB key, Blynk Auth token, Blynl host and Blynk port), the Arduino is reset and the EleksTube clock will display the Access Point IP address.<br><br>
 
 Screenshots of the application and configuration.
 <br>
