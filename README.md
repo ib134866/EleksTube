@@ -69,6 +69,7 @@ D4 ping to the RX pin on the EleksTube clock serial interface
 Micro USB port - plus(+) and minus (-) from the EleskTube clock serial interface - Micro USB wiring - https://never-stop-building-blog-production.s3.amazonaws.com/pictures/wiring-micro-usb-pinout/micro-usb-power-connector-wiring.png
 
 ESP8266 WEMOS D1 mini V3.0.0 pinouts:
+<br>
 +5V pin to EleksTube + pin on serial interface
 GND pin (solder an extra pin to this connection) to negative (-) pin on EleksTube clock serial interface and black wire on the GPS module
 D4 pin to the RX pin on the EleksTube clock serial interface
