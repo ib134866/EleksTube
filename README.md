@@ -30,6 +30,8 @@ Wemo D1 mini - https://www.banggood.com/Wemos-D1-Mini-V3_0_0-WIFI-Internet-Of-Th
 
 3 wire jumper cable with Dupont connectors to connect EleksTube serial and power to the Arduino board - https://www.banggood.com/120pcs-10cm-Female-To-Female-Jumper-Cable-Dupont-Wire-For-Arduino-p-994310.html?rmmds=detail-left-hotproducts__8&HotRecToken=CgEwEAIaAklWIgJQRCgB&cur_warehouse=CN<br>
 
+BN-220 GPS module - https://www.banggood.com/Dual-BN-220-GPS-GLONASS-Antenna-Module-TTL-Level-RC-Drone-Airplane-p-1208588.html?rmmds=myorder&cur_warehouse=CN. Includes connection cable and mounting pad.<br>
+
 Both Arduino controllers come with pin headers.<br>
 
 
