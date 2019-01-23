@@ -22,14 +22,15 @@ Parts List:
 
 Arduino Controller:
 ESP8266 12-F - https://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12F-WIFI-Development-Board-p-985891.html?rmmds=myorder&cur_warehouse=CN
-or
-Wemo D1 mini - https://www.banggood.com/Wemos-D1-Mini-V3_0_0-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-4MB-p-1264245.html?rmmds=myorder&cur_warehouse=CN - preferred since it does not experience a power on reset issue.
+<br>
+or<br>
+Wemo D1 mini - https://www.banggood.com/Wemos-D1-Mini-V3_0_0-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-4MB-p-1264245.html?rmmds=myorder&cur_warehouse=CN - preferred since it does not experience a power on reset issue.<br>
 
-4 pin 2.54 mm pin header to solder to the EleksTube clock serial interface - https://www.banggood.com/10Pcs-Lantian-2_54mm-Gold-plated-3U-Reverse-Curved-Single-Row-Pin-Header-Connector-p-1365750.html?rmmds=search&ID=557432&cur_warehouse=CN
+4 pin 2.54 mm pin header to solder to the EleksTube clock serial interface - https://www.banggood.com/10Pcs-Lantian-2_54mm-Gold-plated-3U-Reverse-Curved-Single-Row-Pin-Header-Connector-p-1365750.html?rmmds=search&ID=557432&cur_warehouse=CN<br>
 
-3 wire jumper cable with Dupont connectors to connect EleksTube serial and power to the Arduino board - https://www.banggood.com/120pcs-10cm-Female-To-Female-Jumper-Cable-Dupont-Wire-For-Arduino-p-994310.html?rmmds=detail-left-hotproducts__8&HotRecToken=CgEwEAIaAklWIgJQRCgB&cur_warehouse=CN
+3 wire jumper cable with Dupont connectors to connect EleksTube serial and power to the Arduino board - https://www.banggood.com/120pcs-10cm-Female-To-Female-Jumper-Cable-Dupont-Wire-For-Arduino-p-994310.html?rmmds=detail-left-hotproducts__8&HotRecToken=CgEwEAIaAklWIgJQRCgB&cur_warehouse=CN<br>
 
-Both Arduino controllers come with pin headers.
+Both Arduino controllers come with pin headers.<br>
 
 
 To get started:
