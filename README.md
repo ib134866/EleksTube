@@ -18,12 +18,12 @@ The program has the following features:
 7. Utilizes OTA (Over The Air) update capabilities of the ESP 8266 module to allow sketch updates after the module is installed in the belly of the clock.
 8. Uses Blynk https://www.blynk.cc mobile application software to control the clock.  The Blynk application allows for selection of clock source (NTP,GPS or internal RTC), update internal RTC with NTP/GPS data, display current date information once a minute for five seconds at a configurable start second.  Change from 24hr to 12 hr time display, change the calculated timezone to a user selectable timezone.  Configure a time range when the clock display should be off - ie. when sleeping if clock is in a bedroom. Each digit can have an individual colour set and stored and restored during a reboot.  The date display can have a different colour than the time display.
 
-Parts List:
+<b>Parts List:</b>
 
 Arduino Controller:
 ESP8266 12-F - https://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12F-WIFI-Development-Board-p-985891.html?rmmds=myorder&cur_warehouse=CN
 <br>
-or<br>
+<b>or</b><br>
 Wemo D1 mini - https://www.banggood.com/Wemos-D1-Mini-V3_0_0-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-4MB-p-1264245.html?rmmds=myorder&cur_warehouse=CN - preferred since it does not experience a power on reset issue.<br>
 
 4 pin 2.54 mm pin header to solder to the EleksTube clock serial interface - https://www.banggood.com/10Pcs-Lantian-2_54mm-Gold-plated-3U-Reverse-Curved-Single-Row-Pin-Header-Connector-p-1365750.html?rmmds=search&ID=557432&cur_warehouse=CN<br>
