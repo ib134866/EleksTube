@@ -96,6 +96,16 @@ The first time the program is installed on a new ESP8266 board, the SPIF files s
 
 Once you have completed the Wifi setup and entered your timezonedb, blynk token, blynk host (local or remote) and blynk port (8080 for local), the clock will begin displaying the corrected time.
 
+<b>OTA (Over The Air) Updates:</b><br>
+The EleksTube_Wifi sketch includes the ability to update the software installed on the Arduino board over WiFi.  To update the software via Wifi simply select the "EleksTube" IP address as the port in the Arduino IDE instead of a serial port.  When you upload your sketch to the board, you will be prompted for a password.  The password will be the password that was entered during the WiFi configuration.
+
+<b>Reset Wifi Configuration</b><br>
+There is a special key sequence in the Blynk App to manually reset the Wifi configuration.<br>
+The sequence invloves:
+ 1. Press the "Update RTC" button
+ 2. Exactly 3 seconds later press the "Update RTC" button again
+<br>
+If you miss the 3 second window the sequnce resets and you must attempt again.  If successfull, the Wifi connectivity parameters are reset (not the other save parameters - OTA password, timezoneDB key, Blynk Auth token, Blynl host and Blynk port), the Arduino is reset and the EleksTube clock will display the Access Point IP address.<br>
 
 Screenshots of the application and configuration.
 <br>
