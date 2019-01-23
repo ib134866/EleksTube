@@ -363,6 +363,7 @@ BLYNK_WRITE(V10) {                  // set the time source
     case 1:{
       S_NTP = 0;          // internal RTC
       S_GPS = 0;          // internal RTC
+      Blynk.syncVirtual(V6);      // determine which special colour mode to display for intenal RTC clock
       // ensure that the time variables are set to turn off display etc. 
       setSyncProvider(getNTPTime);  // Specify function to sync time_t with NTP
       time_t getNTPTime();          // get current NTP time
