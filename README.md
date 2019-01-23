@@ -107,6 +107,7 @@ The sequence invloves:
 <br>
 If you miss the 3 second window the sequnce resets and you must attempt again.  If successfull, the Wifi connectivity parameters are reset (not the other save parameters - OTA password, timezoneDB key, Blynk Auth token, Blynl host and Blynk port), the Arduino is reset and the EleksTube clock will display the Access Point IP address.<br>
 
+
 Screenshots of the application and configuration.
 <br>
 <img src="https://github.com/ib134866/EleksTube/blob/master/EleksTube_Wifi/EleksTube_Wifi_Screenshot.jpg" width="400" height="600">
