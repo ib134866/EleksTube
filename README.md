@@ -1,4 +1,4 @@
-# EleksTube - Wifi NTP clock update
+# EleksTube - Wifi NTP/GPS clock update
 
 
 The EleksMaker EleksTube bamboo LED clock was originally a kickstart project that was produced to highlight EleksMaker's laser cutting technology, but is now being sold on Banggood.
@@ -17,6 +17,20 @@ The program has the following features:
 6. Uses the time zone information to determine DST details - DST start, DST end and current DST status - either on or off.  Uitilzes this information to automatically switch DST offset from UTC when DST changes occur.
 7. Utilizes OTA (Over The Air) update capabilities of the ESP 8266 module to allow sketch updates after the module is installed in the belly of the clock.
 8. Uses Blynk https://www.blynk.cc mobile application software to control the clock.  The Blynk application allows for selection of clock source (NTP,GPS or internal RTC), update internal RTC with NTP/GPS data, display current date information once a minute for five seconds at a configurable start second.  Change from 24hr to 12 hr time display, change the calculated timezone to a user selectable timezone.  Configure a time range when the clock display should be off - ie. when sleeping if clock is in a bedroom. Each digit can have an individual colour set and stored and restored during a reboot.  The date display can have a different colour than the time display.
+
+Parts List:
+
+Arduino Controller:
+ESP8266 12-F - https://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12F-WIFI-Development-Board-p-985891.html?rmmds=myorder&cur_warehouse=CN
+or
+Wemo D1 mini - https://www.banggood.com/Wemos-D1-Mini-V3_0_0-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-4MB-p-1264245.html?rmmds=myorder&cur_warehouse=CN - preferred since it does not experience a power on reset issue.
+
+4 pin 2.54 mm pin header to solder to the EleksTube clock serial interface - https://www.banggood.com/10Pcs-Lantian-2_54mm-Gold-plated-3U-Reverse-Curved-Single-Row-Pin-Header-Connector-p-1365750.html?rmmds=search&ID=557432&cur_warehouse=CN
+
+3 wire jumper cable with Dupont connectors to connect EleksTube serial and power to the Arduino board - https://www.banggood.com/120pcs-10cm-Female-To-Female-Jumper-Cable-Dupont-Wire-For-Arduino-p-994310.html?rmmds=detail-left-hotproducts__8&HotRecToken=CgEwEAIaAklWIgJQRCgB&cur_warehouse=CN
+
+Both Arduino controllers come with pin headers.
+
 
 To get started:
 
